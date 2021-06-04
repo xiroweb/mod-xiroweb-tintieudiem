@@ -1,0 +1,23 @@
+.mod-tintieudiem-style1 {
+    background: #f6f6f6;
+    padding-bottom: 5px;
+}
+.mod-tintieudiem-style1 span {
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin: 2px 4px 2px 0;
+    padding: 3px 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+.mod-tintieudiem-style1 span a {
+
+}
+
+.mod-tintieudiem-style1 .itembox {
+    background: #FFF;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+}

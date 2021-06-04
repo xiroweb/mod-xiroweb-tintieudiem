@@ -12,9 +12,9 @@ defined('_JEXEC') or die;
 use Joomla\CMS\HTML\HTMLHelper;
 
 HTMLHelper::_('stylesheet', 'mod_xiroweb_tintieudiem/'.'bootstrap5-grid.css', array('version' => 'auto', 'relative' => true));
-HTMLHelper::_('stylesheet', 'mod_xiroweb_tintieudiem/'.'default.css', array('version' => 'auto', 'relative' => true));
+HTMLHelper::_('stylesheet', 'mod_xiroweb_tintieudiem/style1.css', array('version' => 'auto', 'relative' => true));
 ?>
-<div class="module<?php echo $moduleclass_sfx; ?> mod-tintieudiem-none">
+<div class="module<?php echo $moduleclass_sfx; ?> mod-tintieudiem-style1">
 	<div class="bs5row g-10 bs5cols-<?php echo $mobile; ?> bs5cols-md-<?php echo $desktop; ?>">
 		<?php foreach ($list as  $key => $item) { ?>
 			<?php $images = json_decode($item->images); ?>

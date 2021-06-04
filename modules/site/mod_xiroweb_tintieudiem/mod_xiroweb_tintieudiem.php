@@ -38,12 +38,10 @@ if (!empty($list))
 	$article_grouping_direction = $params->get('article_grouping_direction', 'ksort');
 	$moduleclass_sfx            = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
 	$item_heading               = $params->get('item_heading');
-	$stylecss					= $params->get('stylecss', 'none');
 
-	if	($stylecss != 'none') {
-		JHtml::_('stylesheet', 'mod_xiroweb_tintieudiem/'.'bs4-grid.css', array('version' => 'auto', 'relative' => true));
-		JHtml::_('stylesheet', 'mod_xiroweb_tintieudiem/'.$stylecss.'.css', array('version' => 'auto', 'relative' => true));
-	}
+	$mobile =  $params->get('col_mobile');
+	$desktop =  $params->get('col_desktop');
+
 
 	require JModuleHelper::getLayoutPath('mod_xiroweb_tintieudiem', $params->get('layout', 'default'));
 }

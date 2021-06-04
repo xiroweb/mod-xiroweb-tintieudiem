@@ -13,6 +13,7 @@
     <folder>helper</folder>
     <filename>mod_[EXTENSION_ALIAS].xml</filename>
     <filename>helper.php</filename>
+    <folder>language</folder>
   </files>
 
   <media destination="mod_xiroweb_tintieudiem"
@@ -44,7 +45,7 @@
           type="list"
           label="MOD_XIROWEB_TINTIEUDIEM_FIELD_SWITCHMODE_LABEL"
           description="MOD_XIROWEB_TINTIEUDIEM_FIELD_SWITCHMODEE_DESC"
-          default="ids"
+          default="options"
           >
           <option value="ids">MOD_XIROWEB_TINTIEUDIEM_OPTION_SWITCHMODE_IDS</option>
           <option value="options">MOD_XIROWEB_TINTIEUDIEM_OPTION_SWITCHMODE_OPTIONS</option>
@@ -137,6 +138,29 @@
           type="note" 
           label="MOD_XIROWEB_TINTIEUDIEM_FIELD_NOTE_LAYOUTNOTE"/>
 
+          <field 
+          name="col_mobile"
+          type="integer"
+          default="2"
+          label="MOD_[TRANSLATION_KEY]_COL_MOBILE_LABEL"
+          description="MOD_[TRANSLATION_KEY]_COL_MOBILE_DESC"
+          first="1"
+          last="6"
+          step="1"
+           />
+
+        <field 
+          name="col_desktop"
+          type="integer"
+          default="4"
+          label="MOD_[TRANSLATION_KEY]_COL_DESKTOP_LABEL"
+          description="MOD_[TRANSLATION_KEY]_COL_DESKTOP_DESC"
+          first="1"
+          last="6"
+          step="1"
+          filter="INT"
+           />
+
         <field
           name="layout"
           type="modulelayout"
@@ -144,43 +168,7 @@
           class="custom-select"
           labelclass="theme-select"
         />
-        <field
-          name="layoutdemodefaut"
-          type="layoutdemo"
-          background="24.png"
-          styles="width:400px;height:359px;"
-          showon="layout:_:default"
-        />
-        <field
-          name="layoutdemo14"
-          type="layoutdemo"
-          background="14.png"
-          showon="layout:_:layout14"
-        />
-        <field
-          name="layoutdemo13"
-          type="layoutdemo"
-          background="13.png"
-          showon="layout:_:layout13"
-        />
-        <field
-          name="layoutdemo12"
-          type="layoutdemo"
-          background="12.png"
-          showon="layout:_:layout12"
-        />
-        <field
-          name="layoutdemo22"
-          type="layoutdemo"
-          background="22.png"
-          showon="layout:_:layout22"
-        />
-          <field
-          name="layoutdemo11"
-          type="layoutdemo"
-          background="11.png"
-          showon="layout:_:layout11"
-        />
+        
         <field name="title_heading" type="headertag"
           label="MOD_XIROWEB_TINTIEUDIEM_FIELD_TITLE_HEADING_LABEL"
           description="MOD_XIROWEB_TINTIEUDIEM_FIELD_TITLE_HEADING_DES" 
@@ -217,18 +205,7 @@
           name="tinnhatnote3" 
           type="note" 
           label="MOD_XIROWEB_TINTIEUDIEM_FIELD_NOTE_TINNHATNOTE3"/>
-        <field
-          name="stylecss"
-          type="list"
-          label="MOD_XIROWEB_TINTIEUDIEM_FIELD_STYLECSS_LABEL"
-          description="MOD_XIROWEB_TINTIEUDIEM_FIELD_STYLECSS_DESC"
-          default="style2"
-          >
-          <option value="none">MOD_XIROWEB_TINTIEUDIEM_FIELD_STYLECSS_OPTION_NONE</option>
-          <option value="default">MOD_XIROWEB_TINTIEUDIEM_FIELD_STYLECSS_OPTION_DEFAULT</option>
-          <option value="style1">MOD_XIROWEB_TINTIEUDIEM_FIELD_STYLECSS_OPTION_STYLE1</option>
-          <option value="style2">MOD_XIROWEB_TINTIEUDIEM_FIELD_STYLECSS_OPTION_STYLE2</option>
-        </field>
+       
         <field 
           name="tinnhatnote2" 
           type="note" 
